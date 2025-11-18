@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Prendete una"</title>
+    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="icon" href="data:image/svg+xml,
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+        <text y='.9em' font-size='90'>🕯️</text>
+    </svg>">
+</head>
+ <header class="header-top">
+        <div class="header-content-wrapper">
+            <div class="logo-space">
+                <img src="logo.png" alt="Logo Velas Aromáticas" class="logo">
+            </div>
+                <main class="main-content">
+        <h1>"tu espacio, tu aroma, tu chispa... prendete una"</h1>
+    </main>
+
+
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos, fragancias y más...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+         
+        </div>
+    </header>
+
+ 
+<hr class="separator">
+
+<section class="products-section-wrapper">
+    <h2>Nuestros productos</h2>
+    
+    <div class="product-grid">
+        
+        <div class="product-card">
+            <a href="#" onclick="showProductDetail('product-detail-tortuga-azul'); return false;" class="product-link">
+                
+                <div class="product-image-container">
+                    <img src="tortuga.png" alt="Vela Aromática Tortuga Celeste" class="product-image">
+                </div>
+                
+                <div class="product-details">
+                    <p class="current-price">
+                        <span class="price-value">$ 3.500</span>
+                    </p>
+                    <p class="product-name">Vela Aromática tortuga - esencia de sandía</p>
+                    <span class="shipping-info full">VER DETALLE</span> 
+                </div>
+                
+            </a>
+        </div>
+        <div class="product-card">
+            <a href="#" onclick="showProductDetail('product-detail-tortuga-verde'); return false;" class="product-link">
+                <div class="product-image-container">
+                    <img src="velitita.png" alt="Vela de vainilla" class="product-image">
+                </div>
+                
+                <div class="product-details">
+                    <p class="current-price">
+                        <span class="price-value">$ 2.500</span>
+                    </p>
+                    <p class="product-name">Vela Artesanal medallón - esencia de sandía</p>
+                    <span class="shipping-info full">VER DETALLE</span>
+                </div>
+            </a>
+        </div>
+        </div>
+</section>
+<hr class="separator-products">
+
+<section id="product-detail-tortuga-azul" class="product-detail-container">
+    
+    <button class="close-button" onclick="hideProductDetail('product-detail-tortuga-azul')">
+        <i class="fas fa-times"></i> Volver a Productos
+    </button>
+
+    <div class="product-layout">
+        <div class="product-gallery">
+            <img src="tortuga.png" alt="Vela de Tortuga Celeste" class="main-image">
+        </div>
+
+        <div class="product-info">
+            <h1>Vela Aromática Tortuga Celeste - Esencia de Sandia</h1>
+            <p class="stock-info">Stock disponible</p>
+            
+            <div class="price-section">
+                <span class="old-price-detail">$ 3.500</span>
+    
+               
+                <a href="#" class="payment-link">Ver los medios de pago</a>
+            </div>
+
+            <div class="buy-box">
+                <div class="shipping-box">
+                
+                </div>
+                
+                <label for="quantity-azul">Cantidad:</label>
+                <input type="number" id="quantity-azul" value="1" min="1" max="10">
+                
+                <button class="buy-button">Comprar ahora</button>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            
+            <h2>Características principales</h2>
+            <ul>
+                <li>Fragancia: Esencia de sandía.</li>
+                <li>Material: Cera de soja natural.</li>
+                <li>Color: Azul</li>
+                <li>Duración: Aproximadamente 2 horas.</li>
+                <li>Medidas: 8cm x 6cm.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section id="product-detail-tortuga-verde" class="product-detail-container">
+    
+    <button class="close-button" onclick="hideProductDetail('product-detail-tortuga-verde')">
+        <i class="fas fa-times"></i> Volver a Productos
+    </button>
+
+    <div class="product-layout">
+        <div class="product-gallery">
+            <img src="velitita.png" alt="Vela artesanal medallón" class="main-image">
+        </div>
+
+        <div class="product-info">
+            <h1>Vela Artesanal medallón - Esencia de sandía</h1>
+            <p class="stock-info">Stock disponible</p>
+            
+            <div class="price-section">
+                <span class="old-price-detail">$ 3.500</span>
+                <p class="current-price-detail">
+                    $ 3.500
+                </p>
+               
+                <a href="#" class="payment-link">Ver los medios de pago</a>
+            </div>
+
+            <div class="buy-box">
+                <div class="shipping-box">
+                   
+                    <p>Retirá gratis en sucursal o puntos de retiros anticipados.</p>
+                </div>
+                
+                <label for="quantity-verde">Cantidad:</label>
+                <input type="number" id="quantity-verde" value="1" min="1" max="10">
+                
+                <button class="buy-button">Comprar ahora</button>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            
+            <h2>Características principales</h2>
+            <ul>
+                <li>Fragancia: Esencia de sandía .</li>
+                <li>Material: Cera de soja natural.</li>
+                <li>Color: Verde</li>
+                <li>Duración: Aproximadamente 2 horas.</li>
+                <li>Medidas: 8cm x 6cm.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<script>
+    // Función para mostrar la vista de detalle
+    function showProductDetail(id) {
+        // === Ocultar secciones que no deben verse en la vista de detalle ===
+        
+        // 1. Oculta el BANNER/ESLOGAN principal
+        const mainContent = document.querySelector('.main-content');
+        if (mainContent) {
+            mainContent.style.display = 'none';
+        }
+        
+        // 2. Oculta la línea divisora principal
+        const separatorMain = document.querySelector('.separator');
+        if (separatorMain) {
+            separatorMain.style.display = 'none';
+        }
+
+        // 3. Oculta la sección de productos (donde están las tortugas pequeñas)
+        const productSection = document.querySelector('.products-section-wrapper');
+        if (productSection) {
+            productSection.style.display = 'none';
+        }
+        
+        // 4. Oculta la línea divisora de productos
+        const separatorProducts = document.querySelector('.separator-products');
+        if (separatorProducts) {
+            separatorProducts.style.display = 'none';
+        }
+        
+        // === Mostrar la vista de detalle ===
+        const detailView = document.getElementById(id);
+        if (detailView) {
+            // Usamos 'flex' para asegurar que las dos columnas se alineen
+            detailView.style.display = 'flex'; 
+            window.scrollTo(0, 0); 
+        }
+    }
+
+    // Función para ocultar la vista de detalle
+    function hideProductDetail(id) {
+        // === Oculta la vista de detalle ===
+        const detailView = document.getElementById(id);
+        if (detailView) {
+             detailView.style.display = 'none';
+        }
+        
+        // === Muestra las secciones que deben verse en la vista de productos ===
+
+        // 1. Muestra el BANNER/ESLOGAN principal
+        const mainContent = document.querySelector('.main-content');
+        if (mainContent) {
+            mainContent.style.display = 'block';
+        }
+        
+        // 2. Muestra la línea divisora principal
+        const separatorMain = document.querySelector('.separator');
+        if (separatorMain) {
+            separatorMain.style.display = 'block';
+        }
+
+        // 3. Muestra la sección de productos de nuevo
+        const productSection = document.querySelector('.products-section-wrapper');
+        if (productSection) {
+             productSection.style.display = 'block'; 
+        }
+        
+        // 4. Muestra la línea divisora de productos de nuevo
+        const separatorProducts = document.querySelector('.separator-products');
+        if (separatorProducts) {
+            separatorProducts.style.display = 'block';
+        }
+
+        window.scrollTo(0, 0); 
+    }
+</script>
+</body>
+</html>
+
+<body>
+   
+
+
+
+    <section class="footer-sections-wrapper">
+        <div class="footer-section">
+            <i class="fas fa-user-circle icon"></i>
+            <h3>Ingresá a tu cuenta</h3>
+            <p>Gestioná tus pedidos y favoritos.</p>
+        </div>
+
+        <div class="footer-section">
+            <i class="fas fa-credit-card icon"></i>
+            <h3>Medios de pago</h3>
+            <p>Paga como quieras, de forma segura.</p>
+        </div>
+    </section>
+
+    <footer class="footer-disclaimer">
+        <p>Usamos cookies para mejorar tu experiencia. Consulta nuestra Política de Privacidad.</p>
+        <button class="accept-cookies">Aceptar cookies</button>
+    </footer>
+
+</body>
+</html>

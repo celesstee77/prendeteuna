@@ -1,0 +1,569 @@
+/* Variables de color para fácil modificación */
+:root {
+    --primary-color: #eeafd2; /* Amarillo Mercado Libre */
+    --secondary-color: #333;
+    --text-color: #333;
+    --light-bg: #f5f5f5;
+    --blue-link: #b1987c;
+}
+
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: var(--text-color);
+}
+
+/* === Encabezado Principal (Barra Superior) === */
+.header-top {
+    background-color: var(--primary-color);
+    padding: 5px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Espacio para la imagen del emprendimiento (Logo) */
+.logo-space {
+    width:200px;* **MODIFICADO: Logo más chico** */
+}
+
+.logo {
+    width: 100%;
+    height: 40
+    /* Puedes usar un color de fondo para distinguirlo si no tienes la imagen */
+    /* background-color: #fff; */ 
+    border-radius: 4px;
+    display: block;
+}
+
+/* Barra de Búsqueda */
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+.search-bar input {
+    border: none;
+    padding: 10px 15px;
+    flex-grow: 1;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-bar button {
+    background-color: #f7f7f7;
+    border: none;
+    padding: 10px 15px;
+    color: #999;
+    cursor: pointer;
+    border-left: 1px solid #eee;
+}
+
+/* Banner superior derecho */
+.header-promo {
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: 500;
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* === Barra de Navegación (Categorías) === */
+.main-nav {
+    background-color: var(--primary-color);
+    padding: 5px 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 14px;
+    padding: 0 10px;
+    display: block;
+    line-height: 40px;
+    transition: color 0.2s;
+}
+
+.main-nav ul li a:hover {
+    color: var(--blue-link);
+}
+
+/* === Contenido Principal (Banner Central) === */
+.main-content {
+    background-color: #f1daea; /* Un amarillo más claro para el banner */
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 20px;
+    /* Simulación de un contenedor de banner grande */
+    background-image: url('placeholder_vela.jpg'); /* Reemplaza con una imagen de vela */
+    background-size: cover;
+    background-position: center;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333; 
+}
+
+.main-content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.main-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.cta-button {
+    background-color: var(--blue-link);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #795959;
+}
+
+/* Separador */
+.separator {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 20px auto;
+    width: 90%;
+}
+
+/* === Secciones Inferiores (Botones/Links) === */
+.footer-sections-wrapper {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 15px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 20%; /* Ajusta el ancho para 4 secciones */
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+
+.footer-section:hover {
+    background-color: var(--light-bg);
+}
+
+.footer-section .icon {
+    font-size: 3em;
+    color: var(--blue-link);
+    margin-bottom: 10px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.footer-section p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* === Pie de Página (Cookies) === */
+.footer-disclaimer {
+    background-color: var(--light-bg);
+    padding: 10px 0;
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.accept-cookies {
+    background-color: var(--blue-link);
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+}
+/* === SECCIÓN DE PRODUCTOS === */
+
+.products-section-wrapper {
+    max-width: 1200px;
+    margin: 40px auto; /* Espacio arriba y abajo */
+    padding: 0 15px;
+}
+
+.products-section-wrapper h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    border-bottom: 3px solid var(--link-color); /* Línea decorativa del título */
+    padding-bottom: 5px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas salten a la siguiente línea */
+    gap: 16px; /* Espacio entre las tarjetas */
+    justify-content: flex-start; /* Alinea las tarjetas al inicio */
+}
+
+.product-card {
+    /* Calcula el ancho para que quepan 6 tarjetas con algo de espacio */
+    width: calc( (100% / 6) - 13.5px ); 
+    min-width: 150px; /* Ancho mínimo para que no se achiquen demasiado */
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,.2);
+}
+
+.product-card a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+}
+
+/* Contenedor de la Imagen */
+.product-image-container {
+    width: 100%;
+    height: 150px; /* Altura fija para la imagen */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Detalles del Producto */
+.product-details {
+    padding: 10px;
+    text-align: left;
+}
+
+.old-price {
+    font-size: 12px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.current-price {
+    display: flex;
+    align-items: flex-end;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-top: 5px;
+}
+
+.price-value {
+    margin-right: 8px;
+}
+
+.discount-label {
+    font-size: 13px;
+    color: #00a650; /* Verde de descuento de Mercado Libre */
+    font-weight: 600;
+}
+
+.installments {
+    font-size: 12px;
+    color: #00a650;
+    margin-top: 5px;
+}
+
+.product-name {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+    line-height: 1.2;
+    height: 34px; /* Altura fija para el nombre */
+    overflow: hidden;
+}
+
+.shipping-info {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #00a650;
+    margin-top: 8px;
+    text-transform: uppercase;
+}
+/* Necesitas la librería de Font Awesome para los iconos (Truck, Times) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+
+/* === VISTA DE DETALLE DE PRODUCTO (Sección 1) === */
+
+.product-detail-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    /* Inicialmente oculto. Por defecto, lo pondremos en "none" para que no se vea */
+    display: none; 
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product-detail-container.is-visible {
+    /* CLASE QUE SE ACTIVARÁ CON JAVASCRIPT PARA MOSTRAR LA VISTA */
+    display: block; 
+}
+
+/* Botón de Volver/Cerrar */
+.close-button {
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    float: right;
+}
+
+
+/* === LAYOUT DE DOS COLUMNAS (Sección 2) === */
+.product-layout {
+    display: flex;
+    gap: 30px;
+}
+
+/* Columna de Imagen/Galería (Izquierda) */
+.product-gallery {
+    width: 45%; /* Menos del 50% para darle más espacio a la info */
+}
+
+.main-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 1px solid #eee;
+    padding: 5px;
+}
+
+/* Columna de Información (Derecha) */
+.product-info {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Título */
+.product-info h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* Detalles (Precio y Cuotas) */
+.price-section {
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.old-price-detail {
+    font-size: 16px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.current-price-detail {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.discount-detail {
+    font-size: 18px;
+    color: #00a650; /* Verde de descuento */
+    font-weight: 600;
+}
+
+.installments-detail {
+    font-size: 14px;
+    /* Usamos el color rosa pastel que pediste */
+    color: var(--link-color); 
+    margin-top: 5px;
+}
+
+.payment-link {
+    font-size: 14px;
+    color: #3483fa;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Caja de COMPRA Y ENVÍO (Mano derecha) */
+.buy-box {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: auto; /* Empuja la caja hacia abajo */
+}
+
+.shipping-box {
+    margin-bottom: 15px;
+}
+
+.shipping-box p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #00a650;
+    font-weight: bold;
+}
+
+/* Estilo del input de cantidad */
+.buy-box input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+/* Botón Comprar */
+.buy-button {
+    /* Usamos el color azul para destacar la acción */
+    background-color: #3483fa; 
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Botón Agregar al Carrito */
+.add-to-cart {
+    background-color: transparent;
+    border: 1px solid #3483fa;
+    color: #3483fa;
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.stock-info {
+    font-size: 14px;
+    color: #00a650;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Estilo para la lista de características */
+.product-info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.product-info ul li {
+    margin-bottom: 5px;
+    color: #666;
+}
+/* === VISTA DE DETALLE DE PRODUCTO (Sección 1) === */
+
+/* === VISTA DE DETALLE DE PRODUCTO (Contenedor principal) === */
+.product-detail-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    /* Por defecto oculto, el JS lo cambiará a flex */
+    display: none; 
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+    /* ¡IMPORTANTE! Cuando está visible, DEBE ser Flex o Block. 
+       El JS lo cambia, pero la estructura interna necesita Flex: */
+}
+
+/* === LAYOUT DE DOS COLUMNAS === */
+.product-layout {
+    /* ESTA REGLA ES CLAVE para dividir en 2 columnas (Imagen y Texto) */
+    display: flex;
+    gap: 30px;
+}
+
+/* Columna de Imagen/Galería (Izquierda) */
+.product-gallery {
+    width: 45%; 
+}
+
+/* Columna de Información (Derecha) */
+.product-info {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
